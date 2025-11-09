@@ -1,0 +1,106 @@
+/* Зовнішній CSS файл (styles.css) */
+
+/* Загальні налаштування Box Model для всіх елементів */
+* {
+    /* 1. box-sizing: border-box */
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    /* Використання одиниці vw */
+    font-size: 1.1vw; 
+    padding: 20px;
+}
+
+.player-container {
+    /* Обмеження розміру для демонстрації */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.music-player {
+    /* 2. Градієнтний фон плеєра (linear-gradient) */
+    background: linear-gradient(135deg, #2c3e50, #3498db); 
+    color: white;
+    /* 3. padding, margin, border */
+    padding: 30px; 
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* Використання одиниці vh для мінімальної висоти */
+    min-height: 30vh;
+}
+
+/* Стилізація кнопок Play/Pause */
+.control-btn {
+    /* Використання одиниць em та px */
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    /* Застосування min() для ширини кнопки */
+    width: min(100px, 15%); 
+}
+
+/* 4. Псевдоклас :hover */
+.control-btn:hover {
+    background-color: #f39c12;
+    transform: scale(1.05);
+}
+
+/* 5. Псевдоклас :active */
+.control-btn:active {
+    background-color: #e67e22;
+    transform: scale(0.95);
+}
+
+.play-btn { background-color: #27ae60; }
+.pause-btn { background-color: #e74c3c; }
+.stop-btn { background-color: #95a5a6; }
+
+/* Блок з текстом для демонстрації overflow */
+.lyrics-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    /* Фіксована висота */
+    height: 100px; 
+    /* 6. overflow */
+    overflow: auto; 
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* Стилізація Таблиці */
+.recent-tracks table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-tracks th, .recent-tracks td {
+    border: 1px solid #ddd;
+    /* Використання rem */
+    padding: 0.8rem; 
+    text-align: left;
+}
+
+.recent-tracks thead th {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Ефект "зебри" */
+.recent-tracks tbody tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
