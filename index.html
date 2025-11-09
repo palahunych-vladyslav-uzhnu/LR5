@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛР №5 - Музичний плеєр</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+    <main class="player-container">
+        <h1>🎵 Стилізований Музичний Плеєр</h1>
+
+        <section class="music-player">
+            <div class="track-info">
+                <h2>Назва Треку: Amazing Grace</h2>
+                <p>Виконавець: John Newton</p>
+                <p style="font-size: 0.9em;">Тривалість: 3:45</p>
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn play-btn" data-action="play">Play</button>
+                <button class="control-btn pause-btn" data-action="pause">Pause</button>
+                <button class="control-btn stop-btn" data-action="stop" style="font-size: 1.2rem;">Stop</button>
+            </div>
+
+            <div class="lyrics-box">
+                <p style="width: calc(100% - 20px);">
+                    Amazing grace! How sweet the sound, That saved a wretch like me! I once was lost, but now am found, Was blind, but now I see. 'Twas grace that taught my heart to fear, And grace my fears relieved. How precious did that grace appear The hour I first believed.
+                    Through many dangers, toils, and snares, I have already come. 'Tis grace has brought me safe thus far, And grace will lead me home.
+                </p>
+            </div>
+        </section>
+
+        <section class="recent-tracks">
+            <h2>Останні Треки</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 10vw;">#</th>
+                        <th>Назва</th>
+                        <th>Виконавець</th>
+                        <th>Час</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>A-ha</td>
+                        <td>Take On Me</td>
+                        <td>3:48</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Queen</td>
+                        <td>Bohemian Rhapsody</td>
+                        <td>5:55</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Metallica</td>
+                        <td>Nothing Else Matters</td>
+                        <td>6:28</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Rihanna</td>
+                        <td>Diamonds</td>
+                        <td>3:45</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+</body>
+</html>
